@@ -38,7 +38,6 @@ tl.from(logo,{
   })
  });
 
-
  // Criar uma timeline {
 let tl = gsap.timeline({
     delay: 0.5,
@@ -61,7 +60,6 @@ let tl = gsap.timeline({
     // onStart, onUpdate, onRepeat, onReverseComplete
 });
 
-
  // Sequence multiple tweens
 tl.to('.selector', { duration: 1, x: 50, y: 0 })
     .to('#id', { autoAlpha: 0 })
@@ -69,13 +67,6 @@ tl.to('.selector', { duration: 1, x: 50, y: 0 })
     .to([elem, elem2], { duration: 3, x: 100 });
  
 </script>
-
-
-
-
-
-
-
 
 
 

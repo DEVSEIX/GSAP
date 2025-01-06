@@ -27,8 +27,6 @@ tl.from(logo,{
     stagger: 1,
 })
 
-
-  
   gsap.to(robo, {
       scale: 1.5,
       duration: 3,
@@ -36,22 +34,12 @@ tl.from(logo,{
       ease: "slow(0.7, 0.7, false)",
       repeat: -1,
       yoyo:true,
-      
-      
+         
   })
-  
  });
 
 
-
-
-
-
-
- 
-
-
- // Create a timeline - APAGAR DAQUI PRA BAIXO {
+ // Criar uma timeline {
 let tl = gsap.timeline({
     delay: 0.5,
     paused: true, // default is false
@@ -74,16 +62,11 @@ let tl = gsap.timeline({
 });
 
 
-
  // Sequence multiple tweens
 tl.to('.selector', { duration: 1, x: 50, y: 0 })
     .to('#id', { autoAlpha: 0 })
     .to(elem, { duration: 1, backgroundColor: 'red' })
     .to([elem, elem2], { duration: 3, x: 100 });
-
-
-
-
  
 </script>
 
